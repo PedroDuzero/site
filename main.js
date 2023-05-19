@@ -1,14 +1,13 @@
 var myImage = document.getElementById("myImage")
 
 if (/Mobi|Android/i.test(navigator.userAgent)) {
-  myImage.addEventListener("touchstart", zoomIn)
-  myImage.addEventListener("touchend", zoomOut)
-}
+  myImage.addEventListener("touchstart", function (event) {
+    event.preventDefault() // Impede comportamentos padrão do toque
+    this.classList.add("zoomed")
+  })
 
-function zoomIn() {
-  this.classList.add("zoomed")
-}
-
-function zoomOut() {
-  this.classList.remove("zoomed")
+  myImage.addEventListener("touchend", function (event) {
+    event.preventDefault() // Impede comportamentos padrão do toque
+    this.classList.remove("zoomed")
+  })
 }
