@@ -6,11 +6,11 @@
 Esse é um projeto Web Responsivo de uma capsula do tempo.
 
 ## 📜 Tecnologias ^_^
-Esse projeto foi desenvolvido durante o NLW da Rocktset com as seguintes tecnologias.
+Esse projeto foi desenvolvido durante o NLW da Rocktset com as seguintes tecnologias:
 
--HTML
--CSS
--Git e Github
+- HTML
+- CSS
+- Git e Github
 
 ## 🎈 Layout
 Você pode visualizar o layout do projeto através
